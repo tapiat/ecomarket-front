@@ -18,12 +18,12 @@ function Usuarios() {
             });
     }, []);
 
-    if (loading) return <p>Cargando usuarios...</p>;
-    if (error) return <p>{error}</p>;
+    if (loading) return <p className="loading">🌿 Cargando usuarios...</p>;
+    if (error) return <p className="error">{error}</p>;
 
     return (
-        <div className="usuarios">
-            <h2>Usuarios</h2>
+        <div className="usuarios-section">
+            <h2>Gestión de Usuarios</h2>
             <table className="tabla-usuarios">
                 <thead>
                 <tr>
@@ -31,7 +31,7 @@ function Usuarios() {
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Rol</th>
-                    <th>Activo</th>
+                    <th>Estado</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -40,8 +40,8 @@ function Usuarios() {
                         <td>{usuario.id}</td>
                         <td>{usuario.nombre} {usuario.apellido}</td>
                         <td>{usuario.email}</td>
-                        <td>{usuario.rol}</td>
-                        <td>{usuario.activo ? '✅' : '❌'}</td>
+                        <td><span className="rol-badge">{usuario.rol}</span></td>
+                        <td>{usuario.activo ? '✅ Activo' : '❌ Inactivo'}</td>
                     </tr>
                 ))}
                 </tbody>
