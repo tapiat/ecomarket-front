@@ -13,6 +13,9 @@ import { useFavoritos } from './context/FavoritosContext';
 import CarritoSidebar from './components/CarritoSidebar';
 import LoginSidebar from './components/LoginSidebar';
 import Recetas from './pages/Recetas';
+import Ofertas from './pages/Ofertas';
+import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
 import './App.css';
 
 function Navbar() {
@@ -67,13 +70,25 @@ function Navbar() {
           </div>
         </nav>
 
-        <nav className="navbar-menu">
-          <Link to="/">Home</Link>
-          <Link to="/productos">Productos</Link>
-          <a href="#">Ofertas</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Contáctanos</a>
-        </nav>
+          <nav className="navbar-menu">
+              <Link to="/">Home</Link>
+              <div className="menu-dropdown">
+                  <span className="menu-dropdown-trigger">Productos ▾</span>
+                  <div className="menu-dropdown-content">
+                      <Link to="/productos?categoria=Alimentos">🥦 Frutas y Verduras</Link>
+                      <Link to="/productos?categoria=Alimentos">🍞 Panadería</Link>
+                      <Link to="/productos?categoria=Alimentos">🌿 Granos y Semillas</Link>
+                      <Link to="/productos?categoria=Cuidado Personal">🧴 Cuidado Personal</Link>
+                      <Link to="/productos?categoria=Ropa">👕 Ropa Orgánica</Link>
+                      <Link to="/productos?categoria=Hogar">🏠 Hogar</Link>
+                      <Link to="/productos?categoria=Jardín">🌱 Jardín</Link>
+                      <Link to="/productos">Ver Todo</Link>
+                  </div>
+              </div>
+              <Link to="/ofertas">Ofertas</Link>
+              <Link to="/nosotros">Nosotros</Link>
+              <Link to="/contacto">Contáctanos</Link>
+          </nav>
 
         <CarritoSidebar
             isOpen={carritoAbierto}
@@ -103,6 +118,10 @@ function App() {
               <Route path="/carrito" element={<Carrito />} />
               <Route path="/favoritos" element={<Favoritos />} />
               <Route path="/recetas/:id" element={<Recetas />} />
+              <Route path="/ofertas" element={<Ofertas />} />
+              <Route path="/nosotros" element={<Nosotros />} />
+              <Route path="/contacto" element={<Contacto />} />
+
             </Routes>
           </main>
 
