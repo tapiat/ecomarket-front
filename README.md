@@ -1,16 +1,44 @@
-# React + Vite
+# 🌿 Ecomarket Spa — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Frontend de la plataforma de e-commerce de productos orgánicos y sustentables, desarrollado con React y Vite.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías
+- React 18 + Vite
+- React Router DOM
+- Axios
+- Context API (Auth, Carrito, Favoritos)
+- CSS personalizado responsive
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Funcionalidades
+- 🛒 Carrito de compras con sidebar deslizable
+- 👤 Registro e inicio de sesión con sidebar
+- ❤️ Sistema de favoritos
+- 🔍 Búsqueda y filtro de productos por categoría
+- 🎠 Banner carrusel automático
+- 🥗 Recetas saludables con modal interactivo
+- 🏷️ Página de ofertas con descuentos
+- 📬 Formulario de contacto
+- 🌱 Catálogo con más de 30 productos orgánicos
 
-## React Compiler
+## 📁 Estructura
+src/
+├── components/     # Banner, CarritoSidebar, LoginSidebar
+├── context/        # AuthContext, CartContext, FavoritosContext
+├── pages/          # Inicio, Productos, Ofertas, Recetas, Nosotros, Contacto
+└── services/       # api.js (conexión con backend)
+## ⚙️ Cómo ejecutar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisitos
+- Node.js 18+
+- Backend corriendo en `http://localhost:8080`
 
-## Expanding the Oxlint configuration
+### Instalación
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+La app estará disponible en `http://localhost:5173`
+
+## 🔗 Repositorios relacionados
+- **Backend:** [ecomaket](https://github.com/tapiat/ecomaket) — Spring Boot + MySQL
