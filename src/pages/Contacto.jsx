@@ -36,28 +36,28 @@ function Contacto() {
                             <span>📧</span>
                             <div>
                                 <h4>Email</h4>
-                                <p>contacto@ecomarket.cl</p>
+                                <a href="mailto:contacto@ecomarket.cl">contacto@ecomarket.cl</a>
                             </div>
                         </div>
                         <div className="contacto-dato">
                             <span>📍</span>
                             <div>
                                 <h4>Dirección</h4>
-                                <p>Santiago, Chile</p>
+                                <a href="https://maps.google.com/?q=Santiago,Chile" target="_blank" rel="noreferrer">Santiago, Chile</a>
                             </div>
                         </div>
                         <div className="contacto-dato">
                             <span>📞</span>
                             <div>
                                 <h4>Teléfono</h4>
-                                <p>+56 9 1234 5678</p>
+                                <a href="tel:+56912345678">+56 9 1234 5678</a>
                             </div>
                         </div>
                         <div className="contacto-dato">
-                            <span>🚚</span>
+                            <span>💬</span>
                             <div>
-                                <h4>Despachos</h4>
-                                <p>Miércoles y Viernes</p>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/56912345678" target="_blank" rel="noreferrer">Escríbenos</a>
                             </div>
                         </div>
                     </div>

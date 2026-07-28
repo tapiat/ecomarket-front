@@ -30,31 +30,31 @@ function Inicio() {
             <section className="categorias">
                 <h2>Nuestras Categorías</h2>
                 <div className="categorias-grid">
-                    <div className="categoria-card">
+                    <Link to="/productos?categoria=Alimentos" className="categoria-card">
                         <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=300&q=80" alt="Alimentos"/>
                         <p>Alimentos</p>
-                    </div>
-                    <div className="categoria-card">
+                    </Link>
+                    <Link to="/productos?categoria=Cuidado Personal" className="categoria-card">
                         <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=300&q=80" alt="Cuidado Personal"/>
                         <p>Cuidado Personal</p>
-                    </div>
-                    <div className="categoria-card">
+                    </Link>
+                    <Link to="/productos?categoria=Ropa" className="categoria-card">
                         <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=300&q=80" alt="Ropa"/>
                         <p>Ropa</p>
-                    </div>
-                    <div className="categoria-card">
+                    </Link>
+                    <Link to="/productos?categoria=Hogar" className="categoria-card">
                         <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=300&q=80" alt="Hogar"/>
                         <p>Hogar</p>
-                    </div>
-                    <div className="categoria-card">
+                    </Link>
+                    <Link to="/productos?categoria=Jardín" className="categoria-card">
                         <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300&q=80" alt="Jardín"/>
                         <p>Jardín</p>
-                    </div>
+                    </Link>
                 </div>
             </section>
 
             <section className="destacados">
-                <h2>Elegidos Especialmente Para Ti</h2>
+                <h2>Ofertas De La Semana</h2>
                 <div className="destacados-grid">
                     <div className="destacado-card">
                         <div className="destacado-badge">OFERTA</div>
@@ -164,8 +164,16 @@ function Inicio() {
                 <h2>🌿 ¡Suscríbete y obtén 10% de descuento!</h2>
                 <p>Recibe ofertas exclusivas, recetas y novedades directamente en tu correo.</p>
                 <div className="suscripcion-form">
-                    <input type="email" placeholder="Ingresa tu email..." />
-                    <button>Suscribirme</button>
+                    <input type="email" placeholder="Ingresa tu email..." id="emailSuscripcion" />
+                    <button onClick={() => {
+                        const email = document.getElementById('emailSuscripcion').value;
+                        if (email) {
+                            alert('¡Gracias por suscribirte! 🌿 Recibirás un 10% de descuento en tu próxima compra.');
+                            document.getElementById('emailSuscripcion').value = '';
+                        } else {
+                            alert('Por favor ingresa tu email.');
+                        }
+                    }}>Suscribirme</button>
                 </div>
             </section>
         </div>

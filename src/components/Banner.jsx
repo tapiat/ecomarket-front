@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const slides = [
+
+
     {
         imagen: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600&q=80',
         titulo: '¡Descubre nuestra despensa orgánica & natural!',
@@ -44,7 +47,7 @@ function Banner() {
                 <div className="banner-overlay">
                     <h1>{slides[actual].titulo}</h1>
                     <p>{slides[actual].subtitulo}</p>
-                    <button className="hero-btn">{slides[actual].btn}</button>
+                    <Link to="/productos" className="hero-btn">{slides[actual].btn}</Link>
                 </div>
             </div>
 
