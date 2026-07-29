@@ -2165,3 +2165,293 @@ body {
   color: #2d6a4f;
   font-size: 1.4rem;
 }
+/* ─── RESPONSIVO MÓVIL ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Barra superior */
+  .barra-top {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .navbar-brand span {
+    font-size: 1.2rem;
+  }
+
+  .navbar-search {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .navbar-icons {
+    font-size: 1.1rem;
+    gap: 1rem;
+  }
+
+  /* Menu secundario */
+  .navbar-menu {
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+
+  /* Banner */
+  .banner {
+    height: 350px;
+  }
+
+  .banner-slide {
+    height: 350px;
+  }
+
+  .banner-overlay {
+    padding: 2rem 1.5rem;
+    min-height: 350px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Bienvenida */
+  .bienvenida {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .bienvenida-texto h2 {
+    font-size: 1.5rem;
+  }
+
+  .bienvenida-logo {
+    flex: none;
+    width: 100%;
+  }
+
+  .logo-circular {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+  }
+
+  /* Categorías */
+  .categorias {
+    padding: 2rem 1rem;
+  }
+
+  .categorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  /* Productos */
+  .productos-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .producto-card {
+    padding: 1rem;
+  }
+
+  .producto-imagen {
+    height: 150px;
+  }
+
+  /* Filtros */
+  .categorias-filtro {
+    gap: 0.5rem;
+  }
+
+  .filtro-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* Destacados */
+  .destacados {
+    padding: 2rem 1rem;
+  }
+
+  .destacados-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Cómo funciona */
+  .como-funciona {
+    padding: 2rem 1rem;
+  }
+
+  .pasos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Recetas */
+  .recetas {
+    padding: 2rem 1rem;
+  }
+
+  .recetas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recetas-cards-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 2rem;
+  }
+
+  /* Suscripción */
+  .suscripcion {
+    padding: 2rem 1rem;
+  }
+
+  .suscripcion-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .suscripcion-form input {
+    border-radius: 8px;
+  }
+
+  .suscripcion-form button {
+    border-radius: 8px;
+  }
+
+  /* Carrito sidebar */
+  .carrito-sidebar {
+    width: 100%;
+    right: -100%;
+  }
+
+  /* Login sidebar */
+  .login-sidebar {
+    width: 100%;
+    right: -100%;
+  }
+
+  /* Carrito página */
+  .carrito-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .carrito-section {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Auth */
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Nosotros */
+  .nosotros-mision {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 2rem;
+  }
+
+  .valores-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equipo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contacto */
+  .contacto-contenido {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 2rem;
+  }
+
+  /* Ofertas */
+  .ofertas-hero {
+    padding: 2rem 1rem;
+  }
+
+  /* Modal recetas */
+  .modal-contenido {
+    max-height: 95vh;
+    margin: 0.5rem;
+  }
+
+  .modal-imagen {
+    height: 180px;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  /* Menu dropdown */
+  .menu-dropdown-content {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* ─── TABLETS ────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bienvenida {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .carrito-sidebar {
+    width: 360px;
+  }
+
+  .login-sidebar {
+    width: 360px;
+  }
+}
